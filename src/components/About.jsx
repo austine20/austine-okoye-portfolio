@@ -1,4 +1,6 @@
 import React from "react";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import Resume from "../assets/augustine-okoye-resume.pdf";
 
 const About = () => {
   return (
@@ -13,7 +15,7 @@ const About = () => {
           <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold">
+          <div className="text-3xl sm:text-right font-bold">
             <p>
               Hi. I'm Augustine Okoye, nice to meet you. Please take a look
               around.
@@ -27,6 +29,21 @@ const About = () => {
               way to large enterprise corporations. What would you do if you had
               a software expert available at your fingertips?
             </p>
+            <div className="mt-5">
+              <a
+                href={Resume}
+                download="Augustine-Okoye-Resume"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="text-white group border-2 px-6 py-3 my-2 flex items-center bg-pink-600 border-pink-600 hover:bg-[#0a192f] hover:border-white">
+                  Download Resume
+                  <span>
+                    <HiArrowNarrowRight className="ml-3 " />
+                  </span>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
